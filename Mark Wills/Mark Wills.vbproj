@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3BD45FFC-B5FF-4CC4-B7B9-B3CA3E67CC1F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Mark_Wills</RootNamespace>
+    <AssemblyName>Mark Wills</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Mark_Wills.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>_Mark_Wills_Books_sleek.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="GroupDocs.Viewer, Version=21.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\GroupDocs.Viewer.21.11.0\lib\net40\GroupDocs.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Transitions">
+      <HintPath>..\..\Rich Player - Standard Version _ BASS.NET\Rich Player_2\bin\x86\Release\Transitions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddWord.Designer.vb">
+      <DependentUpon>AddWord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddWord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlHelper.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Heroes_Avian.Designer.vb">
+      <DependentUpon>Heroes_Avian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Heroes_Avian.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LockFormvb.Designer.vb">
+      <DependentUpon>LockFormvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LockFormvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="MyFullMsgBox.designer.vb">
+      <DependentUpon>MyFullMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyFullMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMsgBox.designer.vb">
+      <DependentUpon>MyMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rextonian.Designer.vb">
+      <DependentUpon>Rextonian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rextonian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RichLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Scroller.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.vb">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopMostCBform.Designer.vb">
+      <DependentUpon>TopMostCBform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TopMostCBform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="AddWord.resx">
+      <DependentUpon>AddWord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Heroes_Avian.resx">
+      <DependentUpon>Heroes_Avian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LockFormvb.resx">
+      <DependentUpon>LockFormvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="MyFullMsgBox.resx">
+      <DependentUpon>MyFullMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMsgBox.resx">
+      <DependentUpon>MyMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rextonian.resx">
+      <DependentUpon>Rextonian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopMostCBform.resx">
+      <DependentUpon>TopMostCBform.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\SwitchBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwitchBack_Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwitchBack_Press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwitchForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwitchForward_Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwitchForward_Press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Mansion_Floor 1_base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bathroom half.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bathroom master.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bedroom 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dining Room Kitchen 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dining Room Kitchen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pool room.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Mansion_Real.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_Playlists.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-download-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bedroom 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bedroom 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bedroom 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bedroom_small.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bedroom_Small2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entertainment Room2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entertainment Room.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large spare.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_spare.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spare2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dining Room single.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common Room.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foyer1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom3-corner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom3-bottom-corner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avian Icon_sleek_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Avians_Reality_faded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Mansion_Floor 3_base.png" />
+    <None Include="Resources\The Mansion_Floor 2_base.png" />
+    <None Include="Resources\icons8-home-512.png" />
+    <None Include="Resources\dog_house_96px.png" />
+    <None Include="Resources\icons8-home-512-small.png" />
+    <None Include="Resources\icons8-world-map-96.png" />
+    <None Include="Resources\icons8-galaxy-80.png" />
+    <None Include="Resources\Dining Room kitchen2.jpeg" />
+    <None Include="Resources\Avian Icon_sleek_5.png" />
+    <None Include="Resources\Abstract P Symbol_2.png" />
+    <None Include="Resources\Angel Icon_4.png" />
+    <None Include="Resources\Vortex_4.png" />
+    <None Include="Resources\Whirlwind Icon_4.png" />
+    <None Include="Resources\Swift Icon_4.png" />
+    <None Include="Resources\Shift_5.png" />
+    <None Include="Resources\Tyke_4.png" />
+    <None Include="Resources\Bolt_Icon_2.png" />
+    <None Include="Resources\The Avians Logo_Sleek_4.png" />
+    <None Include="Resources\The Avians Logo_Sleek_4_lines.png" />
+    <None Include="Resources\The Avians Logo_Sleek_4_lines_colored.png" />
+    <None Include="Resources\Avian_10.png" />
+    <None Include="Resources\Psych_6.png" />
+    <None Include="Resources\Angel_8.png" />
+    <None Include="Resources\Vortex_7.png" />
+    <None Include="Resources\whirlwind_11.png" />
+    <None Include="Resources\Swift_4.png" />
+    <None Include="Resources\Shift_4.png" />
+    <None Include="Resources\Tyke_11.png" />
+    <None Include="Resources\icons8-lock-52.png" />
+    <None Include="Resources\Bolt_8.png" />
+    <None Include="Resources\_Mark_Wills_Books_sleek.png" />
+    <None Include="Resources\Avian Icon_sleek_51.png" />
+    <Content Include="_Mark_Wills_Books_sleek.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
